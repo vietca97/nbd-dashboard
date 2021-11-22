@@ -26,9 +26,9 @@ public class MenuController {
         this.iMenuService = iMenuService;
     }
 
-     @GetMapping("/hello-thangtv")
+     @GetMapping("/hello")
     public List<MenuEntity> getAllMenu (){
-        return "hello-thangtv";
+        return "hello";
     }
     
     @GetMapping("/get-all-menu")
