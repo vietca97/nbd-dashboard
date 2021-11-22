@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  identity:
+    image: 47b49e283f44
+    build:
+        context: ./
+        dockerfile: docker/Dockerfile
+    ports:
+      - 8088:8088
+    restart: always
+  shared:
+    image: bce539ae4aca
+    build:
+        context: ./
+        dockerfile: docker/Dockerfile
+    ports:
+      - 8089:8089
+    restart: always
