@@ -27,7 +27,7 @@ public class MenuController {
     }
 
      @GetMapping("/hello")
-    public List<MenuEntity> getAllMenu (){
+    public List<MenuEntity> hello (){
         return "hello";
     }
     
