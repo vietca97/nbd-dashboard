@@ -8,4 +8,5 @@ import java.util.List;
 public interface ConsumerAppService {
 
     List<ConsumerAppEntity> finAll();
+    List<ConsumerAppEntity> findAllByUsername(String username);
 }

@@ -40,4 +40,10 @@ public class UserController {
         List<UserRoleModel> lstUserAndRole = userRoleDao.findByUserName(username);
         return lstUserAndRole;
     }
+
+    @GetMapping("/api/v1")
+    public String dashboard(){
+        logger.info("Application dashboard");
+        return "Dashboard";
+    }
 }
